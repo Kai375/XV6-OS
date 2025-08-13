@@ -40,11 +40,11 @@ possible to change the contents of the file.
 
   easily found according to the comments.
 
-* Note that the printed PPID field of INIT should be 0 even though the field holding the PPID in the PCB has a different number,
-  
-  we assume that the father of the first process in user space has PID = 0, this is implemented in this project and we also provide a way to
-  
-  identify the INIT process. The rest of the PPIDs in the field are correct.
+* Note that the printed PPID field of INIT *should be 0* (see second image) even though the field holding the PPID in the PCB has a different
+
+   number, we assume that the father of the first process in user space has PID = 0, this is implemented in this project and we also provide
+
+   a way to identify the INIT process. The rest of the PPIDs in the field are correct.
 
 * Existing processes created in the system are printed, with no rows that do not reflect existing processes in the process table.
 
